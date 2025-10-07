@@ -1,0 +1,22 @@
+{
+  "name": "ai-agent",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env agent.js"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "express": "^5.1.0",
+    "groq-sdk": "^0.32.0",
+    "socket.io": "^4.8.1"
+  }
+}
