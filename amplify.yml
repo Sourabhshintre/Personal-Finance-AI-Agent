@@ -1,10 +1,4 @@
 version: 1
-backend:
-  phases:
-    build:
-      commands:
-        - npm ci
-        - echo "Backend build completed"
 frontend:
   phases:
     preBuild:
@@ -12,8 +6,12 @@ frontend:
         - npm ci
     build:
       commands:
-        - echo "Preparing frontend files"
+        - echo "No build required - Node.js server app"
   artifacts:
-    baseDirectory: public
+    baseDirectory: .
     files:
       - '**/*'
+    excludePaths:
+      - node_modules/**/*
+      - .git/**/*
+      - .env
