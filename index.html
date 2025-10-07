@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Assistant</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>🏦 Your Personal Finance Assistant</h1>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message assistant">
+                <div class="message-content">Hello! I'm your personal finance assistant. How can I help you today?</div>
+            </div>
+            <div class="message assistant">
+                <div class="message-content">⚠️ Note: Server functionality (real-time chat) is not available in static deployment. For full functionality, please deploy to a Node.js hosting platform.</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message..." />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+    <script src="public/app.js"></script>
+</body>
+</html>
