@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --env-file=.env agent.js",,
-    "build": "xcopy public dist /E /I /Y"
+    "build": "mkdir -p dist && cp -r public/* dist/"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.4.3",
